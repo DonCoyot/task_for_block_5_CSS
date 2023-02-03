@@ -1,0 +1,85 @@
+header {
+    background: url("../images/matt-essig-KdTGS-AwmA4-unsplash.jpg") bottom no-repeat;
+    background-size: cover; 
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color: #A66F00	;
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.news {
+    background-color: #FFD073;
+    padding: 50px 0 32px ;
+/*не понял почему отрыв от header вылечился paddingом и вообще почему разырв был, ведь в body обнулены margin*/  
+    
+}
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid #071D70;
+}
+article:nth-child(even) {
+    background-color: #FFDC96;
+}
+
+article a {
+    text-decoration: none;
+    color: #071D70;
+}
+article a:hover {
+    color: #6A93D4;
+}
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;
+}
+article p {
+    color: #071D70;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+
+}
+article h2::before:nth-child(-n+3) {
+    content: "New! ";
+
+ }
+.article-meta {
+    color: #071D70;
+    }
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+}    
+footer {
+    background-color: #FFAA00;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+footer .links {
+    margin-bottom: 50px;
+}
+footer .links > a {
+    color: #071D70;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.copyright {
+    color: #071D70;
+    font-family: 'Times New Roman', Times, serif;
+}
