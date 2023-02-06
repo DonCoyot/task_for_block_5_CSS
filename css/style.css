@@ -48,9 +48,11 @@ article p {
     font-weight: 600;
 
 }
-article h2::before:nth-child(-n+3) {
+article:nth-child(-n+2)::before {
     content: "New! ";
-
+    color: #071D70;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
  }
 .article-meta {
     color: #071D70;
